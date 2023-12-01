@@ -1,0 +1,86 @@
+/* For all html file */
+body {
+  background: rgb(200, 185, 146);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+label,
+p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.start-game,
+.restart-gape,
+.btn {
+  width: 230px;
+  padding: 10px 50px;
+  background-color: black;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* for index.html file */
+.btn-container {
+  text-align: center;
+}
+
+/* for player.html file */
+.player-information {
+  text-align: right;
+}
+
+#player1,
+#player2 {
+  padding: 10px 50px;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* For game.html file */
+.game-page {
+  padding: 100px;
+  gap: 100px;
+  display: flex;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  gap: 10px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background: rgb(143, 107, 175);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}

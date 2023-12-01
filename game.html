@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Game page</title>
+  </head>
+  <body>
+    <div class="game-page">
+      <div id="scoreboard">
+        <p id="player1Score">Player 1 Score: 0</p>
+        <p id="player2Score">Player 2 Score: 0</p>
+        <p id="highScore">High Score: 0</p>
+        <button onclick="restartGame()" class="restart-gape">
+          Restart Game
+        </button>
+        <p id="playerTurn">Player 1's turn</p>
+      </div>
+      <div class="game-container" id="gameBoard"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

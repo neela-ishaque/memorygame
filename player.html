@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player Information</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="">
+    <div class="player-information">
+      <h1>Welcome to Memory Game</h1>
+      <!-- Talking player information -->
+
+      <label for="player1">Player 1:</label>
+      <input type="text" id="player1" placeholder="Enter Player 1's Name" />
+      <br />
+      <label for="player2">Player 2:</label>
+      <input type="text" id="player2" placeholder="Enter Player 2's Name" />
+      <br />
+      <!-- By clicking this button we will go to game page -->
+      <a href="game.html">
+        <button onclick="letsPlay()" class="start-game">Let's Play</button>
+      </a>
+    </div>
+    <script>
+      // when we will click start game button this function will be called
+      function letsPlay() {
+        const player1Name = document.getElementById("player1").value;
+        const player2Name = document.getElementById("player2").value;
+
+        // Store player names in localStorage for the game page to access
+        localStorage.setItem("player1", player1Name);
+        localStorage.setItem("player2", player2Name);
+      }
+    </script>
+  </body>
+</html>
